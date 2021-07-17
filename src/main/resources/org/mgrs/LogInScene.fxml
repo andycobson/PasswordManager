@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mgrs.LogInController">
+   <children>
+      <TextField fx:id="startScreeUsrNTextfield" layoutX="364.0" layoutY="126.0" promptText="Username" />
+      <PasswordField fx:id="startScreenPassTextfield" layoutX="364.0" layoutY="161.0" promptText="Password" />
+      <Button fx:id="startLoginButton" layoutX="412.0" layoutY="202.0" mnemonicParsing="false" onAction="#startLoginButtonPress" text="Login" />
+      <Label layoutX="285.0" layoutY="258.0" text="If you do not have an account, then please click &quot;Sign Up&quot;" />
+      <Button fx:id="startSignUpButton" layoutX="405.0" layoutY="284.0" mnemonicParsing="false" onAction="#switchToSceneSignUp" text="Sign Up" />
+      <Label layoutX="380.0" layoutY="14.0" text="WayPass">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="74.0" text="Your personal password manager! We are very secure!" />
+      <Label fx:id="startLoginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="325.0" prefHeight="17.0" prefWidth="674.0" AnchorPane.bottomAnchor="308.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="325.0" />
+   </children>
+</AnchorPane>

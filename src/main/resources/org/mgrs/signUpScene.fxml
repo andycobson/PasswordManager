@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mgrs.signUpController">
+   <children>
+      <TextField fx:id="signUpUsrNTextfield" layoutX="349.0" layoutY="104.0" promptText="Enter a Username" />
+      <PasswordField fx:id="signUpPassTextfield" layoutX="349.0" layoutY="138.0" promptText="Enter a Password" />
+      <PasswordField fx:id="signUpConfPasswordField" layoutX="349.0" layoutY="173.0" promptText="Enter Password Again" />
+      <Button fx:id="signUpSceneSignBtn" layoutX="394.0" layoutY="219.0" mnemonicParsing="false" onAction="#initSignUpService" text="Sign Up" />
+      <Label layoutX="364.0" layoutY="22.0" text="WayPass">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="63.0" text="You are a step closer to a more secure way of living!" />
+      <Label fx:id="signUpMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="272.0" layoutY="307.0" prefHeight="17.0" prefWidth="310.0" textAlignment="CENTER" />
+      <Label fx:id="usernameSignUpMessage" layoutX="517.0" layoutY="108.0" prefHeight="17.0" prefWidth="196.0" />
+      <Label layoutX="320.0" layoutY="256.0" text="Username must be 8-30 characters long." />
+      <Label layoutX="171.0" layoutY="273.0" text="Password must be 8-20 characters long. At least 1 upper-case, 1 special character, and 1 number." />
+      <Label fx:id="passwordSignUpMessage1" layoutX="517.0" layoutY="142.0" prefHeight="17.0" prefWidth="196.0" />
+      <Label fx:id="passwordSignUpMessage2" layoutX="517.0" layoutY="177.0" prefHeight="17.0" prefWidth="196.0" />
+      <Button layoutX="38.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToSceneStartUp" text="Back" />
+   </children>
+</AnchorPane>

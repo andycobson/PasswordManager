@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mgrs.LoggedInController">
+   <children>
+      <Label fx:id="loggedInWelLabel" layoutX="398.0" layoutY="40.0" text="Welcome!" />
+      <ScrollPane layoutX="50.0" layoutY="111.0" prefHeight="500.0" prefWidth="750.0">
+         <content>
+            <VBox fx:id="loggedInVbox" prefHeight="500.0" prefWidth="750.0" />
+         </content>
+      </ScrollPane>
+      <HBox layoutX="54.0" layoutY="69.0" prefHeight="25.0" prefWidth="400.0">
+         <children>
+            <Label text="Service/Webiste" />
+            <Label layoutX="10.0" layoutY="10.0" text="Username">
+               <padding>
+                  <Insets left="40.0" />
+               </padding></Label>
+            <Label layoutX="95.0" layoutY="10.0" text="Password">
+               <padding>
+                  <Insets left="40.0" />
+               </padding></Label>
+         </children>
+      </HBox>
+      <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#logOutNow" text="Log Out" />
+   </children>
+</AnchorPane>
